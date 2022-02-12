@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.navbar-brand{
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-nav{
+  font-family: 'Kanit', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+i {
+  font-size: 20px;
+}
+
+.fa-shopping-cart{
+  color: black;
+}
+
+form {
+  font-family: 'Kanit', sans-serif;
+}
+
+
+body{
+    background-image: url(img/sflowerbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.logincontainer{
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+
+.logincontainer h1{
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid silver;
+  font-family:'Kanit', sans-serif;
+}
+
+.logincontainer form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .input-group{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.input-group input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.input-group label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size:16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-group span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fca510;
+  transition: .5s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+  top: -5px;
+  color: #80400b;
+}
+
+.input-group input:focus ~ span::before,
+.input-group input:valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px;
+  color: #80400b;
+  cursor: pointer;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #fca510;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover{
+  border-color: #80400b;
+  transition: .5s;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+
+.signup_link a{
+  color: #80400b;
+  text-decoration: none;
+}
+
+.signup_link a:hover{
+  text-decoration:underline;
+}

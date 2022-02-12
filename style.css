@@ -25,6 +25,7 @@ form {
   font-family: 'Kanit', sans-serif;
 }
 
+
 .carousel-item {
   height: 32rem;
   background: #777;
@@ -58,6 +59,16 @@ form {
   text-align: center;
   padding: 60px;
 }
+
+
 .text-white{
     font-family: 'Kanit', sans-serif;
 }
+
+table {
+  text-align: center;
+  float:left;
+  width:33%;
+}  
+
+/* LOGIN FORM */

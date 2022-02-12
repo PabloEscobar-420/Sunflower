@@ -17,6 +17,7 @@ session_start();
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <nav class="navbar sticky-top navbar-expand-lg bg-light navbar-light">
@@ -30,9 +31,9 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <!-- Link -->
-        <li class="nav-item"><a class="nav-link" href="#myCarousel">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contactme">AboutUs</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
 
         <?php
 
@@ -61,8 +62,8 @@ session_start();
     <div class="carousel-item active">
       <div class="overlay-image" style="background-image:url(./img/sunflowerbg.jpeg);"></div>
       <div class="container">
-        <h1>FOR YOUR PEACE</h1>
-        <p>We offer clothes that would make you comfortable to wear.</p>
+        <h1>FOR YOUR COMFORT</h1>
+        <p>A hassle-free system just for you.</p>
         <a href="#" class="btn btn-lg btn-dark">Sunflower</a>
       </div>
     </div>
@@ -71,7 +72,7 @@ session_start();
       <div class="overlay-image" style="background-image:url(./img/solarpanel.jpg);"></div>
       <div class="container">
         <h1>FOR THE ENVIRONMENT</h1>
-        <p>We provide quality clothes from quality materials.</p>
+        <p>We promote a green and efficient community.</p>
         <a href="#" class="btn btn-lg btn-dark">Sunflower</a>
       </div>
     </div>
@@ -79,8 +80,8 @@ session_start();
     <div class="carousel-item">
       <div class="overlay-image" style="background-image:url(./img/family.jpg);"></div>
       <div class="container">
-        <h1>FOR YOUR FAMILY</h1>
-        <p>We offer Simple / Minimalistic clothes.</p>
+        <h1>FOR YOUR FUTURE</h1>
+        <p>Ensure a better future by monitoring your expenses.</p>
         <a href="#" class="btn btn-lg btn-dark">Sunflower</a>
       </div>
     </div>
@@ -98,21 +99,18 @@ session_start();
 
 <main class="container4" id="myblog">
   <div class="p-5" style="background-color:#F3F4ED">
-    <img src="img/sflogo.png" class="img-fluid" alt="..." />
-    <h1>Sunflower</h1>
-    <p class="lead">To shine and grow as one.</p>
+    <img src="img/sflogo2.png" class="img-fluid" alt="..." />
+    <p class="lead">Sunflower keeps track of your electrical activities and makes recommendations based on graphical illustrations and real-time readings.</p>
     <a class="btn btn-lg btn-dark" href="#" role="button-join">JOIN US</a>
     <a class="btn btn-lg btn-dark" href="#" role="button-login">LOGIN</a>
   </div>
 </main>
-
-
 <!--FOOTER-->
-<footer class="bg-dark text-center text-white" id="contactme">
+<footer class="bg-dark text-center text-white p-2" id="contactme">
   <!-- Grid container -->
-  <div class="container5 p-4 pb-0">
+  <div class="container5 p-5 py-0">
     <!-- Section: Social media -->
-    <section class="mb-4">
+    <section class="mb-2">
       <!-- Facebook -->
       <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/Edsuran!" role="button"><i class="fab fa-facebook-f"></i></a>
 
@@ -139,7 +137,6 @@ session_start();
   </div>
   <!-- Copyright -->
 </footer>
-
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
