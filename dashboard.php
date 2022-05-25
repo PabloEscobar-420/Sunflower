@@ -24,10 +24,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!-- Link -->
-                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
                 <ul class="navbar-nav d-flex flex-row me-1">
                 </ul>
         </div>
@@ -35,36 +34,7 @@
 </nav>
 
 <body>
-    <!--LOGIN FORM -->
-    <div class="logincontainer">
-        <h1>Login</h1>
-        <form action="includes/login.inc.php" method="POST" class="login-email">
-            <div class="input-group">
-                <input type="text" name="uid" required>
-                <span></span>
-                <label>Username/E-mail</label>
-            </div>
-            <div class="input-group">
-                <input type="password" name="pwd" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass"><a href="forgotpwd.php">Forgot Password?</a></div>
-            <input type="submit" name="submit" value="Login as User">
-            &nbsp
-            <input type="submit" name="submit" value="Login as Admin">
-            <div class="signup_link">Don't have an account? <a href="signup.php">Register Here</a>.</div>
-        </form>
-        <?php
-        if (isset($_GET["error"])) {
-            if ($_GET["error"] == "emptyinput") {
-                echo "<p>Fill in all fields!</p>";
-            } else if ($_GET["error"] == "wronglogin") {
-                echo "<p>Incorrect login information!</p>";
-            }
-        }
-        ?>
-    </div>
+
 
 
     <!--FOOTER-->

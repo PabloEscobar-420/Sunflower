@@ -116,7 +116,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0);">
       © 2021 Copyright:
-      <a class="text-white" href="S+EClothing.com">S + E Clothing, Inc. All Rights Reserved</a>
+      <a class="text-white" href="S+EClothing.com">Sunflower, Inc. All Rights Reserved</a>
     </div>
     <!-- Copyright -->
   </footer>

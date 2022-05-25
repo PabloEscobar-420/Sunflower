@@ -8,7 +8,7 @@
     <title>Sunflower</title>
     <link rel="icon" href="img/sflogo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="forgotpwd.css" />
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -37,33 +37,12 @@
 <body>
     <!--LOGIN FORM -->
     <div class="logincontainer">
-        <h1>Login</h1>
-        <form action="includes/login.inc.php" method="POST" class="login-email">
-            <div class="input-group">
-                <input type="text" name="uid" required>
-                <span></span>
-                <label>Username/E-mail</label>
-            </div>
-            <div class="input-group">
-                <input type="password" name="pwd" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass"><a href="forgotpwd.php">Forgot Password?</a></div>
-            <input type="submit" name="submit" value="Login as User">
-            &nbsp
-            <input type="submit" name="submit" value="Login as Admin">
-            <div class="signup_link">Don't have an account? <a href="signup.php">Register Here</a>.</div>
+        <h1>Reset your Password</h1>
+        <p>An Email will be sent to you on how to reset your password.</p>
+        <form action="includes/reset-request.inc.php" method="POST" class="login-email">
+            <input type="text" name="email" placeholder="Enter your e-mail address...">
+            <input type="submit" name="reset-request-submit">Receive new password by e-mail</button>
         </form>
-        <?php
-        if (isset($_GET["error"])) {
-            if ($_GET["error"] == "emptyinput") {
-                echo "<p>Fill in all fields!</p>";
-            } else if ($_GET["error"] == "wronglogin") {
-                echo "<p>Incorrect login information!</p>";
-            }
-        }
-        ?>
     </div>
 
 

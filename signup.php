@@ -66,27 +66,28 @@
             </div>
             <div class="return_link">Already have an account? <a href="login.php">Log in</a>.</div>
         </form>
-    </div>
-    <?php
 
-    if (isset($_GET["error"])) {
-        if ($_GET["error"] == "emptyinput") {
-            echo "<p>Fill in all fields!</p>";
-        } else if ($_GET["error"] == "invalid UID") {
-            echo "<p>Choose a proper username!</p>";
-        } else if ($_GET["error"] == "invalid Email") {
-            echo "<p>Choose a proper email!</p>";
-        } else if ($_GET["error"] == "password don't match") {
-            echo "<p>Password don't match!</p>";
-        } else if ($_GET["error"] == "stmtfailed") {
-            echo "<p>Something went wrong, try again!</p>";
-        } else if ($_GET["error"] == "usernametaken") {
-            echo "<p>Taken Username!</p>";
-        } else if ($_GET["error"] == "none") {
-            echo "<p>You have signed up!</p>";
+        <?php
+
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                echo "<p>Fill in all fields!</p>";
+            } else if ($_GET["error"] == "invalid UID") {
+                echo "<p>Choose a proper username!</p>";
+            } else if ($_GET["error"] == "invalid Email") {
+                echo "<p>Choose a proper email!</p>";
+            } else if ($_GET["error"] == "password don't match") {
+                echo "<p>Password don't match!</p>";
+            } else if ($_GET["error"] == "stmtfailed") {
+                echo "<p>Something went wrong, try again!</p>";
+            } else if ($_GET["error"] == "usernametaken") {
+                echo "<p>Taken Username!</p>";
+            } else if ($_GET["error"] == "none") {
+                echo "<p>You have signed up!</p>";
+            }
         }
-    }
-    ?>
+        ?>
+    </div>
 </body>
 
 

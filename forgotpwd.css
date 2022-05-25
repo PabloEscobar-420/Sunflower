@@ -107,14 +107,14 @@ form .input-group{
 
 .pass{
   margin: -5px 0 20px;
-  cursor: pointer;
   color: #80400b;
+  cursor: pointer;
 }
 
 .pass a{
-  text-decoration: none;
+  margin: -5px 0 20px;
   color: #80400b;
-
+  cursor: pointer;
 }
 
 .pass a:hover{

@@ -34,11 +34,12 @@ session_start();
         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.php">Admin</a></li>
 
         <?php
 
         if (isset($_SESSION["useruid"])) {
-          echo "<li class='nav-item'><a class='nav-link' href='profile.php'>Progile page</a></li>";
+          echo "<li class='nav-item'><a class='nav-link' href='dashboard.php'>Dashboard</a></li>";
           echo "<li class='nav-item'><a class='nav-link' href='includes/logout.inc.php'>Logout</a></li>";
         } else {
           echo "<li class='nav-item'><a class='nav-link' href='login.php'>Login</a></li>";
@@ -101,8 +102,8 @@ session_start();
   <div class="p-5" style="background-color:#F3F4ED">
     <img src="img/sflogo2.png" class="img-fluid" alt="..." />
     <p class="lead">Sunflower keeps track of your electrical activities and makes recommendations based on graphical illustrations and real-time readings.</p>
-    <a class="btn btn-lg btn-dark" href="#" role="button-join">JOIN US</a>
-    <a class="btn btn-lg btn-dark" href="#" role="button-login">LOGIN</a>
+    <a class="btn btn-lg btn-dark" href="signup.php" role="button-join">JOIN US</a>
+    <a class="btn btn-lg btn-dark" href="login.php" role="button-login">LOGIN</a>
   </div>
 </main>
 <!--FOOTER-->
@@ -133,7 +134,7 @@ session_start();
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0);">
     © 2021 Copyright:
-    <a class="text-white" href="S+EClothing.com">S + E Clothing, Inc. All Rights Reserved</a>
+    <a class="text-white" href="Sunflower.com">Sunflower, Inc. All Rights Reserved</a>
   </div>
   <!-- Copyright -->
 </footer>
